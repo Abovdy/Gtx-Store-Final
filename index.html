@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTX STORE</title>
+    <link rel="icon" href="GTX.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+
+    <nav>
+
+        <img src="GTX.png" alt="" class="navicon">
+        <h1 class="gtx">GTXStore</h1>
+
+        <ul>
+
+
+            <li>
+
+                <button class="open-btn" onclick="openSidebar()">☰ </button>
+
+
+                <div id="sidebar" class="sidebar">
+
+                    <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
+
+
+                    <a href="..\index.html" class="logout-a">
+
+                        <img src="Logout.jpg" alt="logout" class="logout-img">
+
+
+                    </a>
+
+                    <div class="profile">
+                        <img src="profile.jpg" alt="Profile" class="profile-img">
+                        <h3>Profile</h3>
+                    </div>
+
+
+                    <div class="search-bar">
+                        <input type="text" name="search" placeholder="Looking for something" class="search-input" />
+                        <button class="search-btn">search</button>
+                        <script src="search.js"></script>
+                    </div>
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+                </div>
+
+
+
+                <script src="sidebar.js"></script>
+            </li>
+
+
+            <br>
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#laptops">Laptops</a></li>
+            <li><a href="#phones">Phones</a></li>
+            <li><a href="#tv">TV </a></li>
+            <li><a href="#Accessories">Accessories</a></li>
+
+
+
+        </ul>
+    </nav>
+
+    <div id="home" class="section">
+        <br>
+        <br>
+
+
+        <h2 class="p1"> <strong s>Browse</strong> our various products</h2>
+        <div class="poster">
+
+
+            <img src="poster 3.png" alt="" class="poster" id="c">
+            <img src="poster2.png" alt="" class="poster" id="r">
+
+        </div>
+
+        <div class="border1"></div>
+
+        <div class="offers">
+            <h1 style="margin-top: 0px;">Spacial Offers</h1>
+            Save your money Purchase now and get 20% refunded as coupons
+        </div>
+
+
+        <div class="border2"></div>
+
+
+        <div class="sales">
+            <div class="product-slider" id="slider">
+
+                <div class="slider-item">
+                    <a href="#mb1">
+                        <img src="mb1.webp" alt="RedMagic 9" height="300px">
+                    </a>
+                    <button onclick="openForm('RedMagic 9','900$')">buy</button>
+                </div>
+
+
+                <div class="slider-item">
+                    <a href="mb2.webp">
+                        <img src="mb2.webp" alt="FOLD Z4" height="280px">
+                    </a>
+                    <button onclick="openForm('FOLD Z4','1200$')">buy</button>
+                </div>
+
+
+
+                <div class="slider-item">
+                    <a href="#mb3">
+                        <img src="mb3.webp" alt="ONEPLUS" height="280px">
+                    </a>
+                    <button onclick="openForm('ONEPLUS','1000$')">buy</button>
+                </div>
+
+
+
+                <div class="slider-item">
+                    <a href="#5">
+                        <img src="pc5.webp" alt="Alienware">
+                    </a>
+                    <button onclick="openForm('Alienware','2000$')">buy</button>
+                </div>
+
+
+
+                <div class="slider-item">
+                    <a href="#6">
+                        <img src="pc6.webp" alt="TuF">
+                    </a>
+                    <button onclick="openForm('TuF','1500$')">buy</button>
+                </div>
+
+
+
+                <div class="slider-item">
+                    <a href="#7">
+                        <img src="pc7.webp" alt="Msi">
+                    </a>
+                    <button onclick="openForm('Msi','999$')">buy</button>
+                </div>
+
+
+
+                <div class="slider-item">
+                    <a href="#8">
+                        <img src="pc8.webp" alt="ASUS ROG Strix">
+                    </a>
+                    <button onclick="openForm('ASUS ROG Strix','1299$')">buy</button>
+                </div>
+
+            </div>
+            <button id="prev-btn" class="scrollbtnl">‹</button>
+            <button id="next-btn" class="scrollbtnr">›</button>
+
+        </div>
+
+    </div>
+
+    <div id="laptops" class="section">
+        <h2 style="Color:white;"> Laptops</h2>
+        <div class="product" name="macbook pro 2020">
+            <img src="macb.jpg" alt="MACBOOK PRO 2020">
+            <p>macbook pro 2020
+                <br>processor Apple M1
+                <br> Color silver
+                <br> 1.4GHz- 8GB RAM- 256 SSD <br>
+
+                <br>
+            <p class="pprice">750$ </p>
+
+            <button class="buy" onclick="openForm('MACBOOK PRO 2020','750$')">Buy</button>
+        </div>
+
+        <div class="product" name="Toshiba Sate llite M55-B">
+            <img src="t1.jpg" alt="Toshiba Sate llite M55-B">
+            <p>Toshiba Sate llite M55-B
+                <br>CPU Intel core i7-6700
+                <br> Color silver
+                <br> 1.4GHz- 16GB RAM- 1TB SSD <br>
+
+                <br>
+            <p class="pprice">720$ </p>
+
+            <button class="buy" onclick="openForm('Toshiba Sate llite M55-B','720$')">Buy</button>
+        </div>
+
+
+        <div class="product" name="HP probook 6475b">
+            <img src="t3.jpg" alt="HP probook 6475b">
+            <p>HP probook 6475b
+                <br>CPU A4 4300m
+                <br> Color black
+                <br> 1.4GHz- 8GB RAM- 500GB HDD <br>
+
+                <br>
+            <p class="pprice">500$ </p>
+
+            <button class="buy" onclick="openForm('HP probook 6475b ','500$')">Buy</button>
+        </div>
+
+        <div class="product" name="HP 445 g6">
+            <img src="t2.jpg" alt="HP 445 g6">
+            <p>HP 445 g6
+                <br>CPU Ryzen 5 3500u
+                <br> Color silver
+                <br> 1.4GHz- 16GB RAM- 512GB HDD <br>
+
+                <br>
+            <p class="pprice">780$ </p>
+
+            <button class="buy" onclick="openForm('HP 445 g6 ','780$')">Buy</button>
+        </div>
+
+
+        <div class="product" name="HP Pavilion">
+            <img src="hp2.jpg" alt="HP Pavilion">
+            <p>HP Pavilion
+                <br>CPU Intel core i7-1152Q
+                <br>Color- silver
+                <br>2.80GHz- 16GB RAM - 512GB SSD
+                <br>
+                <br>
+            <p class="pprice">650$ </p>
+            <button class="buy" onclick="openForm('HP Pavilion','650$')">Buy</button>
+        </div>
+
+        <div class="product" name="Vectus L125" id="">
+            <img src="pc1.jpg" alt="Vectus L125">
+            <p>Vectus L125
+                <br>CPU Intel core i7-1355U
+                <br>Color- Black
+                <br>2.80GHz- 16GB RAM - 512GB SSD
+                <br>
+                <br>
+            <p class="pprice">700$ </p>
+            <button class="buy" onclick="openForm('Vectus L125','700$')">Buy</button>
+        </div>
+
+        <div class="product" name="HP Ost M1551" id="">
+            <img src="pc2.jpg" alt="HP Ost M1551">
+            <p>HP Ost M1551
+                <br>CPU Intel core i9-2351h
+                <br>Color- Pink
+                <br>4.00GHz- 32GB RAM - 1Tp SSD
+                <br>
+                <br>
+            <p class="pprice">1000$ </p>
+            <button class="buy" onclick="openForm('HP Ost M1551','1000$')">Buy</button>
+        </div>
+
+        <div class="product" name="hp N9001" id="">
+            <img src="pc3.jpg" alt="hp N9001">
+            <p>hp N9001
+                <br>CPU Intel core i7-1355U
+                <br>Color- Black
+                <br>2.80GHz- 16GB RAM - 512GB SSD
+                <br>
+                <br>
+            <p class="pprice">500$ </p>
+            <button class="buy" onclick="openForm('hp N9001','500$')">Buy</button>
+        </div>
+
+
+        <div class="product" name="CPU Intel core i5-6300u">
+            <img src="t2.jpg" alt="pro HP 650 g2">
+            <p>HP 650 g2
+                <br>CPU Intel core i5-6300u
+                <br> Color silver
+                <br> 1.4GHz- 8GB RAM- 1TB HDD <br>
+
+                <br>
+            <p class="pprice">680$ </p>
+
+            <button class="buy" onclick="openForm('HP 650 g2 ','680$')">Buy</button>
+        </div>
+
+
+        <div class="product" name="Asus zeeno book">
+            <img src="as.jpg" alt="Asus zeeno book">
+            <br>
+            <br>
+            <p>Asus zeeno book
+
+                <br>CPU Intel core i7-1355U
+                <br>Color- Black
+                <br>2.80GHz- 16GB RAM - 512GB SSD
+                <br>
+                <br>
+            <p class="pprice">700$ </p>
+            <button class="buy" onclick="openForm('Asus zeeno book','700$')">Buy</button>
+        </div>
+
+        <div class="product" name="Toshiba Tecra A40-G">
+            <img src="tosh.jpg" alt="Toshiba Tecra A40-G">
+            <p>Toshiba Tecra A40-G
+                <br>CPU Intel core i7-1165G7
+                <br>Color- Black
+                <br>2.70GHz- 32GB RAM - 2TB SSD
+
+                <br>
+            <p class="pprice">800$ </p>
+            <button class="buy" onclick="openForm('Toshiba Tecra A40-G','800$')">Buy</button>
+        </div>
+
+
+        <div class="product" name="Alienware" id="5">
+            <img src="pc5.webp" alt="Alienware">
+            <p>Alienware
+                <br>CPU Intel core i7-1355U
+                <br>Color- Black
+                <br>6.80GHz- 64GB RAM - 2Tp SSD
+                <br>
+                <br>
+            <p class="pprice">2000$ </p>
+            <button class="buy" onclick="openForm('Alienware','2000$')">Buy</button>
+        </div>
+
+
+
+        <div class="product" name="TuF" id="6">
+            <img src="pc6.webp" alt="TuF">
+            <p>TuF
+                <br>CPU Intel core i9-1455H
+                <br>Color- Black
+                <br>4.80GHz- 24GB RAM - 5Tp Hdd
+                <br>
+                <br>
+            <p class="pprice">1500$ </p>
+            <button class="buy" onclick="openForm('TuF','1500$')">Buy</button>
+        </div>
+
+
+        <div class="product" name="Msi" id="7">
+            <img src="pc7.webp" alt="Msi">
+            <p>Msi
+                <br>CPU AMD Ryzen 9000
+                <br>Color- Black
+                <br>3.80GHz- 20GB RAM - 720GB SSD
+                <br>
+                <br>
+            <p class="pprice">999$ </p>
+            <button class="buy" onclick="openForm('Msi','999$')">Buy</button>
+        </div>
+
+
+        <div class="product" name="ASUS ROG Strix" id="8">
+            <img src="pc8.webp" alt="ASUS ROG Strix">
+            <p>ASUS ROG Strix
+                <br>CPU Intel core i7-1355U
+                <br>Color- Purple
+                <br>2.80GHz- 16GB RAM - 512GB SSD
+                <br>
+                <br>
+            <p class="pprice">1299$ </p>
+            <button class="buy" onclick="openForm('ASUS ROG Strix','1299$')">Buy</button>
+        </div>
+
+    </div>
+
+
+
+    <div id="phones" class="section">
+        <h2 style="Color:white;">Phones </h2>
+        <div class="product" name="Iphone 16 Pro Max">
+            <img src="16p.jpg" alt="Iphone 16 Pro Max ">
+            <p>Iphone 16 Pro Max
+                <br>
+                Color- Desert Titanium
+                <br> Bt-3751MAh
+                <br> Strong- 1TB
+                <br>
+
+            <p class="pprice">1599$ </p>
+            </p>
+            <button class="buy" onclick="openForm('Iphone 16 Pro Max ','1699$')">Buy</button>>
+
+        </div>
+        <div class="product" name="Iphone 15 Pro Max">
+            <img src="15p.jpg" alt="Iphone 15 Pro Max">
+            <p>Iphone 15 Pro Max
+                <br>
+                Color- National Titanium
+                <br> Bt-3645MA
+                <br> Strong- 512GB
+                <br>
+            <p class="pprice">1499$ </p>
+            </p>
+            <button class="buy" onclick="openForm('Iphone 15 Pro Max ','1599$')">Buy</button>
+        </div>
+
+        <div class="product" name="Iphone 14 Pro Max">
+            <img src="14p.jpg" alt="Iphone 14 Pro Max">
+            <p>Iphone 14 Pro Max
+                <br>
+                Color- Purple
+                <br> Bt-3521MAh
+                <br> Strong- 256GB
+                <br>
+            <p class="pprice">750$ </p>
+            <button class="buy" onclick="openForm('Iphone 14 Pro Max ','1399$')">Buy</button>
+        </div>
+        <div class="product" name="Iphone 13 Pro Max">
+            <img src="13.jpg" alt="Iphone 13 Pro Max">
+            <p>Iphone 13 Pro Max
+                <br>
+                Color- Sira blue
+                <br> Bt-3321MAh
+                <br> Strong- 256GB
+                <br>
+            <p class="pprice">1299$ </p>
+            <button class="buy" onclick="openForm('Iphone 13 Pro Max ','1299$')">Buy</button>
+        </div>
+
+
+        <div class="product" name="Samsung S24 Ultra">
+            <img src="s24.jpg" alt="Samsung S24 Ultra">
+            <p>Samsung S24 Ultra
+                <br>
+                Color- National Titanium
+                <br> Bt-5000MAh
+                <br> Storage- 512GB
+                <br>
+            <p class="pprice">1400$ </p>
+            <button class="buy" onclick="openForm('Samsung S24 Ultra ','1400$')">Buy</button>
+        </div>
+
+
+        <div class="product" name="Samsung S23 Ultra">
+            <img src="s23.jpg" alt="Samsung S23 Ultra">
+            <p>Samsung S23 Ultra
+                <br>
+                Color- cream
+                <br> Bt-5000MAh
+                <br> Storage- 256GB
+                <br>
+            <p class="pprice">790$ </p>
+            <button class="buy" onclick="openForm('Samsung S23 Ultra ','790$')">Buy</button>
+        </div>
+
+        <div class="product" name="amsung S22 Ultra">
+            <img src="s22.jpg" alt="amsung S22 Ultra  ">
+            <p>Samsung S22 Ultra
+                <br>
+                Color- Phantom black
+                <br> Bt-5000MAh
+                <br> Storage- 256 GB
+                <br>
+            <p class="pprice">850$ </p>
+            <button class="buy" onclick="openForm('smsung S22 Ultra ','850$')">Buy</button>
+        </div>
+
+        <div class="product" name="Sansung z filp 5">
+            <img src="z5.jpg" alt="Sansung z filp 5">
+            <p>Sansung z filp 5
+                <br>
+                Color- Black
+                <br> Bt-5000MAh
+                <br> Storage- 1TB
+                <br>
+            <p class="pprice">800$ </p>
+            <button class="buy" onclick="openForm('Sansung z filp 5 ','800$')">Buy</button>
+        </div>
+
+        <div class="product" name="RedMagic 9" id="m1">
+            <img src="mb1.webp" alt="RedMagic 9">
+            <p>RedMagic 9
+                <br>
+                Color- Black
+                <br> Bt-5000MAh
+                <br> Storage- 6 Ram 512GB
+                <br>
+            <p class="pprice">900$ </p>
+            <button class="buy" onclick="openForm('RedMagic 9','900$')">Buy</button>
+        </div>
+
+        <div class="product" name="FOLD Z4" id="m2">
+            <img src="mb2.webp" alt="FOLD Z4">
+            <p>FOLD Z4
+                <br>
+                Color- gray
+                <br> Bt-5000MAh
+                <br> Storage-16 Ram 2TB
+                <br>
+            <p class="pprice">1200$ </p>
+            <button class="buy" onclick="openForm('FOLD Z4','1200$')">Buy</button>
+        </div>
+
+
+        <div class="product" name="ONEPLUS" id="m3">
+            <img src="mb3.webp" alt="ONEPLUS">
+            <p>ONEPLUS
+                <br>
+                Color- Black
+                <br> Bt-5000MAh
+                <br> Strong- 16 Ram 512TB
+                <br>
+            <p class="pprice">1000$ </p>
+            <button class="buy" onclick="openForm('ONEPLUS','1000$')">Buy</button>
+        </div>
+
+
+
+    </div>
+
+
+    <div id="tv" class="section">
+        <h2 style="Color:white;"> TV </h2>
+        <div class="product" name="Samsung Smart TV">
+            <img src="le.jpg" alt="Samsung Smart TV">
+            <p> Samsung Smart Tv <br>Inch-32 <br> <br>
+            <p class="pprice">420$ </p>
+            <button class="buy" onclick="openForm('Samsung Smart Tv','420$')">Buy</button>
+        </div>
+        <div class="product" name="LG Smart OLED Inch-55">
+            <img src="ol.jpg" alt="LG Smart OLED">
+            <p> LG Smart OLED <br>Inch-55 <br> <br>
+            <p class="pprice">510$ </p>
+            <button class="buy" onclick="openForm('LG Smart OLED','510$')">Buy</button>
+
+        </div>
+        <div class="product" name="Dansat QOLED Inch-65">
+            <img src="lc.jpg" alt="Dansat QOLED ">
+            <p> Dansat QOLED <br>Inch-65 <br> <br>
+            <p class="pprice">600$ </p>
+            <button class="buy" onclick="openForm('Dansat QOLED','600$')">Buy</button>
+        </div>
+        <div class="product" name="sony Inch-40">
+            <img src="qol.jpg" alt="sony">
+            <p> Sony <br>Inch-40 <br> <br>
+            <p class="pprice">350$ </p>
+            <button class="buy" onclick="openForm('sony','350$')">Buy</button>
+
+        </div>
+    </div>
+
+    <div id="Accessories" class="section">
+        <h2 style="Color:white;">Accessories</h2>
+        <div class="product" name="RTX">
+            <img src="ac.jpg" alt="RTX">
+            <p> RTX <br>GAMEPAD <br> <br>
+            <p class="pprice">50$ </p>
+            <button class="buy" onclick="openForm('RTX','50$')">Buy</button>
+        </div>
+
+        <div class="product" name="Silcon pod">
+            <img src="acc.jpg" alt="Silcon pod  ">
+            <p> Silcon pod <br>For iphones <br> <br>
+            <p class="pprice">10$ </p>
+            <button class="buy" onclick="openForm('Silcon pod ','10$')">Buy</button>
+        </div>
+
+        <div class="product" name="Fast Charger 25W For Iphones">
+            <img src="acp4.jpg" alt="Fast Charger  ">
+            <p>Fast Charger <br>25W For Iphones <br> <br>
+            <p class="pprice">30$ </p>
+            <button class="buy" onclick="openForm('Fast Charger  ','30$')">Buy</button>
+        </div>
+
+        <div class="product" name="Apple Headphone">
+            <img src="acp3.jpg" alt="Headphone  ">
+            <p>Headphone <br>Apple Headphone <br> <br>
+            <p class="pprice">35$ </p>
+            <button class="buy" onclick="openForm('Headphone ','35$')">Buy</button>
+        </div>
+
+        <div class="product" name=" Headphones Apple Airpods gn2">
+            <img src="acp2.jpg" alt="Headphones  ">
+            <p>Headphone <br>Apple Airpods gn2 <br> <br>
+            <p class="pprice">30$ </p>
+            <button class="buy" onclick="openForm('Headphone ','30$')">Buy</button>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- purchaseForm-->
+
+    <div id="purchaseForm" class="form-popup">
+        <form class="form-container" onsubmit="submitForm(event)">
+            <h2>Purchase details</h2>
+            <label for="productName">Product name :</label>
+            <input type="text" id="productName" disabled>
+
+            <label for="price">Buy:</label>
+            <input type="text" id="price" disabled>
+
+            <label for="name">Name :</label>
+            <input type="text" id="name" required>
+
+            <label for="address">Address :</label>
+            <input type="text" id="address" required>
+
+            <label for="paymentMethod">payment method :</label>
+            <select id="paymentMethod" required>
+                <option value="">Choose Payment method ...</option>
+                <option value="creditCard">Credit card</option>
+                <option value="cash">Cash on delivery</option>
+                <option value="cash">Bankak</option>
+            </select>
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" required>
+
+            <button type="submit" class="submitbtn">send</button>
+            <button type="button" class="cancelbtn" onclick="closeForm()">close </button>
+        </form>
+
+
+
+    </div>
+
+
+
+    <!-- Footer Section -->
+    <footer id="f">
+        <div class="footer-container">
+            <div class="footer-row">
+                <!-- About Us Section -->
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>GTXStore is an online store specializing in offering the best products with the highest quality
+                        and
+                        competitive prices.</p>
+                </div>
+
+                <!-- Links Section -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#labtop">Our Products</a></li>
+                        <li><a href="#f">About Us</a></li>
+                        <li><a href="#f">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li> +249996350618</li>
+                        <li> GTXStore@Gmail.com</li>
+                        <li> Khartoum, Sad Sudan</li>
+                    </ul>
+                </div>
+
+                <!-- Social Media  -->
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><img src="fb3.png" alt="Facebook" class="social-icon"></a>
+                        <a href="https://whatsapp.com/"><img src="wa3.png" alt="whatsapp" class="social-icon"></a>
+                        <a href="https://telegram.com/"><img src="tl3.png" alt="teligram" class="social-icon"></a>
+                        <a href="https://twitter.com/"><img src="tw3.png" alt="twiter" class="social-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 All rights reserved to <strong>GTX Store</strong></p>
+        </div>
+    </footer>
+
+    <script src="scroll.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
